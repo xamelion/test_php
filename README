@@ -1,0 +1,9 @@
+Execute docker-compose up -d in the terminal and load http://localhost:8100/ in your browser.
+Time to learn some PHP!
+
+Notes
+We use port-forwarding to connect to the inside of containers from our local machine.
+webserver: http://localhost:8100
+db: mysql://devuser:devpass@localhost:9906/test_db
+Our local directory, ./php, is mounted inside of the webserver container as /var/www/html/
+The files within in our local folder will be served when we access the website inside of the container
